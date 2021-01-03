@@ -41,7 +41,7 @@ title_separator          : "-"
 subtitle                 : "Data Scientist"
 name                     : "John Ray Martinez"
 description              : "Portfolio of John Ray Martinez, a data scientist. John has more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
-url                      : "http://www.jraymartinez.com"
+url                      : "https://jraymartinez.github.io" 
 baseurl                  : "/portfolio"
 #repository               : gpesleta/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
@@ -139,7 +139,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jraymartinez"
     - label: "Sitemap"
-      url: "http://www.jraymartinez.com/portfolio/sitemap/"
+      url: "https://jraymartinez.github.io/portfolio/sitemap/"
 
 
 # Reading Files
