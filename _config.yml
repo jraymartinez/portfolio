@@ -32,7 +32,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "plum" #"air" #  # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "sunrise" #"air" #  # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "John Ray Martinez"
-  avatar           : "/assets/images/John"
+  avatar           : "/assets/images/John.jpg"
   bio              : "Data scientist with 9+ years of software engineering experience in Investment Banking, Insurance, and Retail industries. 
   Advocates for data science and analytics approach to solve healthcare and transportation problems."
   location         : "United States of America"
