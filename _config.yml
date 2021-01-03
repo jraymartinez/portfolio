@@ -41,8 +41,8 @@ title_separator          : "-"
 subtitle                 : "Data Scientist"
 name                     : "John Ray Martinez"
 description              : "Portfolio of John Ray Martinez, a data scientist. John has more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
-#url                      : "https://jraymartinez.github.io"
-url                      : "http://www.jraymartinez.com"
+url                      : "https://jraymartinez.github.io"
+#url                      : "http://www.jraymartinez.com"
 baseurl                  : "/portfolio"
 teaser                   :
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -139,8 +139,8 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jraymartinez"
     - label: "Sitemap"
-      #url: "https://jraymartinez.github.io/portfolio/sitemap/"
-      url: "http://www.jraymartinez.com/portfolio/sitemap/"
+      url: "https://jraymartinez.github.io/portfolio/sitemap/"
+      #url: "http://www.jraymartinez.com/portfolio/sitemap/"
 
 
 # Reading Files
