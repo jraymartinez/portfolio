@@ -41,9 +41,8 @@ title_separator          : "-"
 subtitle                 : "Data Scientist"
 name                     : "John Ray Martinez"
 description              : "Portfolio of John Ray Martinez, a data scientist. John has more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
-url                      : "https://jraymartinez.github.io" 
+url                      : "https://jraymartinez.github.io"
 baseurl                  : "/portfolio"
-#repository               : gpesleta/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 words_per_minute         : 175
