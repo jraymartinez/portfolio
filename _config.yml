@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "John Ray Martinez"
-  avatar           : "/assets/images/John.jpg"
+  avatar           : "/assets/images/John"
   bio              : "Data scientist with 9+ years of software engineering experience in Investment Banking, Insurance, and Retail industries. 
   Advocates for data science and analytics approach to solve healthcare and transportation problems."
   location         : "United States of America"
