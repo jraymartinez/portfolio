@@ -40,7 +40,7 @@ title                    : "John Ray Martinez"
 title_separator          : "-"
 subtitle                 : "Data Scientist"
 name                     : "John Ray Martinez"
-description              : "Portfolio of John Ray Martinez, a data scientist. John has more than nine years of software engineer experience in various industries (Investment Banking, Insurance, Retail)."
+description              : "Portfolio of John Ray Martinez, a data scientist. John has more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
 url                      : "https://www.jraymartinez.github.io"
 baseurl                  : "/portfolio"
 #repository               : gpesleta/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpeg"
-  bio              : "Data scientist with 9+ years of software engineer experience in Investment Banking, Insurance, and Retail industries. 
+  bio              : "Data scientist with 9+ years of software engineering experience in Investment Banking, Insurance, and Retail industries. 
   Advocates for data science and analytics approach to solve healthcare and transportation problems."
   location         : "United States of America"
   links:
