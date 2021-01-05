@@ -38,7 +38,7 @@ minimal_mistakes_skin    : "dirt" #"air" #  # "default", "aqua", "contrast", "da
 locale                   : "en-US"
 title                    : "John Ray Martinez"
 title_separator          : "-"
-subtitle                 : "Data Scientist"
+subtitle                 : "Aspiring Data Scientist"
 name                     : "John Ray Martinez"
 description              : "Portfolio of John Ray Martinez, a data scientist. John has more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
 url                      : "https://jraymartinez.github.io"
