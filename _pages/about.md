@@ -11,7 +11,7 @@ permalink: /about/
 ## <font color='#0092ca'>EDUCATION</font>
 
 
-#### Master of Science in Data Science, with High Distinction 
+#### Master of Science in Data Science 
 *[Drexel University](https://www.drexel.edu/)*<br/>
 June 2021
 - Ongoing (GPA 4.00/4.00)
@@ -47,10 +47,10 @@ August 2006
 - Mainframe Developer (2010-2011)
 
 #### [Central Mindanao University](https://cmu.edu.ph/)
-- Instructor (2008-2009)
+- Physics Instructor (2008-2009)
 
 #### [University of the Philippines Diliman](https://upd.edu.ph/)
-- Instructor (2007-2008)
+- Physics Instructor (2007-2008)
 
 
 ## <font color='#0092ca'>SKILLS</font>
