@@ -1,0 +1,15 @@
+main:
+  - title: "About"
+    url: /about/
+
+  - title: "CV"
+    url: /assets/docs/jmartinez_resume_20191110.pdf
+
+  - title: "Data Science Projects"
+    url: /categories/projects/
+
+  - title: "Publications"
+    url: /categories/publications/
+    
+  - title: "Certificates"
+    url: /categories/certificates/
