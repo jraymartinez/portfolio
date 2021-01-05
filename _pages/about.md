@@ -24,9 +24,7 @@ October 2009
 - Published a paper under Theoretical Physics group titled “Eﬀect of a Linear Potential on the Temporal Diﬀraction of Particle in a Box,” 2009
 - Offered a promotion with one of the world's largest investment banks during the last academic year 
 
-#### Bachelor of Science in Physics with Specialization in Computer Applications
-#### Bachelor of Secondary Education Major in Mathematics
-#### (Double-degree program)
+#### Bachelor of Science in Physics with Specialization in Computer Applications / Bachelor of Secondary Education Major in Mathematics (Double-degree program)
 *[De La Salle University - Manila](https://dlsu.edu.ph/)*<br/>
 August 2006
 - Undergraduate Thesis titled “Wigner Quasi-probability Distribution of the Cosecant-squared Potential Well
@@ -39,7 +37,7 @@ August 2006
 #### [Safeway Philtech, Inc.](https://www.safewayphiltech.com/)
 - Senior IT Consultant (2016-2019)
 
-#### [Software Internationa Corporation (M)](https://77soft.com)
+#### [Software International Corporation (M)](https://sicmsb.com)
 - Senior Software Engineer (2014-2015)
 
 #### [Seven Seven Global Services, Inc.](https://77soft.com)
