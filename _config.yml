@@ -32,7 +32,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" #"air" #  # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "plum" #"air" #  # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "Aspiring Data Scientist with 9+ years of software engineering experience in Investment Banking, Insurance, and Retail industries. He is a graduate student intern of DXC's Applied Artificial Intelligence (AI) Studio at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
+  bio              : "Aspiring Data Scientist with 9+ years of software engineering experience in Investment Banking, Insurance, and Retail industries. He is a graduate student intern of DXC's Applied Artificial Intelligence (AI) Studio in the College of Computing and Informatics at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
   location         : "United States of America"
   links:
     - label: "Email"
