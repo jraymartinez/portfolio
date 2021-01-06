@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is an aspiring data scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
+**John** is an aspiring Data Scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
