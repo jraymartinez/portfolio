@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a aspiring data scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He advocates for data science and analytics approach to solve healthcare and transportation problems.
+**John** is an aspiring data scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He advocates for data science and analytics approach to solve healthcare and transportation problems.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
