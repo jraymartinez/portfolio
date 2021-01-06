@@ -35,7 +35,7 @@ August 2006
 
 ## <font color='#0092ca'>WORK EXPERIENCE</font>
 
-#### [DXC Technology](https://www.dxc.technology.com/)
+#### [DXC Technology](https://www.dxc.technology/)
 - Masters Technical Intern (2019-Present)
 
 #### [Safeway Philtech, Inc.](https://www.safewayphiltech.com/)
