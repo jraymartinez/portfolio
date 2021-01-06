@@ -2,7 +2,7 @@ main:
   - title: "About"
     url: /about/
 
-  - title: "CV"
+  - title: "Résumé"
     url: /assets/docs/jmartinez_resume_20191110.pdf
 
   - title: "Data Science Projects"
