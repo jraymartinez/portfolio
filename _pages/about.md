@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a data scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He advocates for data science and analytics approach to solve healthcare and transportation problems.
+**John** is a aspiring data scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He advocates for data science and analytics approach to solve healthcare and transportation problems.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
@@ -16,7 +16,7 @@ permalink: /about/
 June 2021
 - Ongoing (GPA 4.00/4.00)
 - Capstone Project: Multimodal Brain Tumor Segmentation using Convolutional Neural Network
-- DXC-Drexel University Scholar
+- DXC Technology-Drexel University Scholar
 
 #### Master of Science in Physics
 *[University of the Philippines Diliman](https://upd.edu.ph/)*<br/>
@@ -28,8 +28,9 @@ October 2009
 *[De La Salle University - Manila](https://dlsu.edu.ph/)*<br/>
 August 2006
 - Undergraduate Thesis titled “Wigner Quasi-probability Distribution of the Cosecant-squared Potential Well
+- Department of Science and Technology (DOST) Scholar
+- De La Salle University (DLSU) Academic Scholar
 - Dean's Lister
-- DLSU Academic Scholar
 
 
 ## <font color='#0092ca'>WORK EXPERIENCE</font>
