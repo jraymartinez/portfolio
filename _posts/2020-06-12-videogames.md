@@ -2,8 +2,8 @@
 layout: single
 header:
   teaser: /assets/images/dota2.png
-  image: /assets/images/mariaressa20190206.jpg
-  caption: "Photo credit: [**Reporters Without Borders**](https://rsf.org/)"  
+  image: /assets/images/warfare_bundle.png
+  caption: "Photo credit: [**www.gamestop.com**](https://www.gamestop.com/video-games/playstation-4/consoles/products/playstation-4-pro-call-of-duty-modern-warfare-bundle-1tb/11097597.html?utm_source=rakutenls&utm_medium=affiliate&utm_content=IGN&utm_campaign=10&utm_kxconfid=tebx5rmj3&cid=afl_10000087&affID=77777&sourceID=oelFIBIMgTk-7z3_M5TBe3e2aRNTlhI6tQ&bvroute=Review%2F138746449)"  
 title: "Identifying Co-occurrence Based on Hours Played for Video Games"
 date:   2020-06-12 16:50:00 +0800
 categories: projects
@@ -13,7 +13,7 @@ tags: [natural language processing, unsupervised learning, clustering, theme ext
 ---
 
 ## AUTHORS
-[John Ray Martinez] (https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
+[John Ray Martinez](https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
 
 <sub> *This research is implemented in fulfillment of the requirements for the Data Mining Course of Master of Science in Data Science under Drexel University College of Computing & Informatics* </sub>
 
