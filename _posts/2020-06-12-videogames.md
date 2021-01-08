@@ -1,42 +1,25 @@
 ---
 layout: single
 header:
-  teaser: /assets/images/wordcloud.png
+  teaser: /assets/images/dota2.png
   image: /assets/images/mariaressa20190206.jpg
   caption: "Photo credit: [**Reporters Without Borders**](https://rsf.org/)"  
-title: "unwRAPPLER: Identifying Underlying Themes in Rappler News Articles"
-date:   2019-07-23 16:50:00 +0800
+title: "Identifying Co-occurrence Based on Hours Played for Video Games"
+date:   2020-06-12 16:50:00 +0800
 categories: projects
 mathjax: "true"
-excerpt: "This study aims to uncover the underlying themes of Rappler news articles via unsupervised clustering techniques and see if there is an inherent concentration of news in a specific theme."
+excerpt: "In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together."
 tags: [natural language processing, unsupervised learning, clustering, theme extraction, Rappler, data mining]
 ---
 
 ## AUTHORS
-[Carmelita Esclanda](https://www.linkedin.com/in/carmelita-esclanda-566b2946/) (cesclanda@aim.edu), [George Allan Esleta](https://gpsleta.github.io/) (gesleta@aim.edu), Elmer Robles (erobles@aim.edu), Sandro Luis Silva (ssilva@aim.edu)
+[John Ray Martinez] (https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
 
-## EXECUTIVE SUMMARY
-Rappler, one of the leading online news publishers in the Philippines, seeks to inspire community engagement and create action for social change through citizen journalism. However, it has recently been under scrutiny by the Philippine government for “twisted” reporting. This study aims to uncover the underlying themes of Rappler news articles via unsupervised clustering techniques and see if there is an inherent concentration of news in a specific theme. A total of 11,079 articles were extracted from Rappler’s national news section published from January 2018 to May 2019. Features were extracted from the articles using a term frequency-inverse document frequency (TF-IDF) vectorizer and dimensions were reduced by implementing Latent Semantic Analysis (LSA). Lastly, unsupervised clustering via k-means algorithm was applied to group the articles and internal validation metrics were utilized to determine the optimal number of clusters. Ten clusters were uncovered, with Philippine President Rodrigo Duterte as the dominant cluster. The remaining themes touch on different branches of government, police and weather updates, and trending national issues. The insights gained from this research can aid Rappler in balancing its reporting by lessening bias towards specific topics.
+<sub> *This research is implemented in fulfillment of the requirements for the Data Mining Course of Master of Science in Data Science under Drexel University College of Computing & Informatics* </sub>
 
-![poster]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_poster.png)
 
 ## INTRODUCTION
-Rappler is one of the leading online news publishers in the Philippines. It was started in 2011 by former CNN journalist Maria Ressa. However, since 2018, Rappler has been under heavy scrutiny by the Philippine government for “twisted” and “biased reporting” [[1](#ref1)].  Philippine President Rodrigo Duterte even went so far as calling Rappler a “fake news” outlet that publishes articles that are “pregnant with falsity” [[2](#ref2)]. Rappler has been on the receiving end of criminal cases from the Philippine governments. BIR filed several counts of tax evasion charges against Rappler CEO Maria Ressa. Cyber-libel cases were also filed against Ressa.
-
-Why is Rappler being targeted by the Duterte Administration? Is Rappler “twisted” and “biased” in its reporting? In this work, we uncovered the underlying themes of Rappler’s news articles via unsupervised clustering, to see if there is indeed an inherent concentration of news in a specific topic or theme.
-
-## BUSINESS VALUE
-Extracting themes from a set of articles programmatically has a widespread application in the digital publishing industry and can be used to deliver business value to readers, journalists, advertisers, aggregators, and researchers.  
-
-- **Readers** in the digital age have no patience. They are more likely to use a search engine to retrieve a set of ranked articles from multiple news sources and it becomes a challenge for online news platforms to engage a reader continuously. Automatic theme extraction and clustering of articles provide the ability to structure a set of articles to make it easier for readers to navigate to related articles. If articles can be presented in a logical hierarchy driven by patterns in the data, human intervention is minimized (saving on labor costs) and the reader is kept on the news platform, increasing engagement time on the site.
-
-- **News Publishers and Journalists** seeking to address topics of broad interest to their readership can benefit from a thematic clustering of articles to determine the balance of news coverage. Publishing organizations are always looking for gaps in news coverage to offer readers some perspective and insight into topics that are not heavily covered. By examining existing themes holistically, they can better gauge what is missing and what their next article should be about. 
-
-- **Advertisers** that are considering online news platforms to reach specific customer segments can tailor their messages so that they are congruent with the themes that readers are interested in. For instance, themes dealing with legislative or judicial proceedings may appeal to advertisers whose clients are lawyers or law schools.  Advertisers of tourism and tourist agencies may be interested in weather and specific vacation destinations, such as Boracay. 
-
-- **Aggregators** in the licensed publishing industry create packages of content for redistribution. Their business model, which can be subscription or advertiser-based, is to target specific customers based on their geographic, demographic, and psychographic profile. For instance, if an investor wanted to understand market conditions for a particular industry, they would subscribe to a real-time news delivery service that was able to provide the relevant articles.
-
-- **Researchers** make money by selling analytical reports. By studying the themes presented on news platforms and combining the study with other metrics such as readership engagement, sentiment analysis, and political stance, they can make in-depth comparisons with other news delivery platforms to better inform advertisers and aggregators.
+Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [1]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [2]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
 
 ## METHODOLOGY
 To uncover the underlying themes, a total of **11,079 news articles** published from **January 2018 to May 2019** were retrieved from Rappler's Nation section (`https://www.rappler.com/nation`). The general workflow for clustering the Rappler articles as shown in [Figure 1](#fig1) involves the following steps:
