@@ -28,7 +28,7 @@ Steam, the largest digital distribution platform for PC gaming, has 6000 games a
 As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [[4](#ref4)]:
 
 <a id="table1"></a> 
-#### Table 1. Sample Filtered Dataset
+#### Table 1. Sample Filtered Dataset.
 <table>
 <thead>
 <tr>
@@ -68,116 +68,306 @@ As per Kaggle documentation, the dataset which is approximately nine megabytes o
 
 
 ## METHODOLOGY
-We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe should represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than a specified number of hours; otherwise, its value is 0. Afterwards, we would likely utilize the python library MLXtend to automatically perform the apriori principle to determine the frequent itemsets. The said library could also generate association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on these rules, not only can we create meaningful insights but also can provide recommendations with respect to associated or correlated video games.
+We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than or equal to the median number of hours played; otherwise, its value is 0. Afterwards, we would utilizez the python library MLXtend to automatically perform the apriori principle to determine the frequent itemsets. The library also generated association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on this discretization, we generated association rules and built a recommender system.
 
-### 3. Data Preprocessing
-Data preprocessing was implemented on the acquired article text. The text preprocessing involves:
+<a id="table2"></a> 
+#### Table 2. Sample Transformed Dataset.
+<table>
+<thead>
+<tr>
+<th>User Id</th>
+<th>ARK Survival Evolved</th>
+<th>Audiosurf</th>
+<th>Banished</th>
+<th>BioShock Infinite</th>
+<th>Borderlands 2</th>
+<th>Call of Duty Black Ops</th>
+<th>Call of Duty Modern Warfare 2</th>
+<th>Call of Duty Modern Warfare 2 - Multiplayer</th>
+<th>Call of Duty World at War</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>5250</code></td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td><code>76767</code></td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><code>86540</code></td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td><code>229911</code></td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td><code>298950</code></td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
 
-- Neutralizing text case-sensitivity by converting text to lowercase
-- Omitting unnecessary whitespaces by removing leading and trailing whitespace
-- Converting words to root form by performing stemming, via NLTK’s `PorterStemmer`.
+### 3. Quantitative Association Rules
+Here comes the fun part - finding association rules. The first step is to determine frequent itemsets. Since the data is relatively large, we have decided to set the minimum support to 0.005. 
 
-### 4. Exploratory Data Analysis 
-To see if some obvious themes or topics stand out in the article corpus, exploratory data analysis was performed on the data before clustering. [Figure 2](#fig2) shows the word cloud and word frequency graph for the Rappler news articles published from January 2018 to May 2019. Both show that **President Rodrigo Duterte is the most mentioned word in the dataset**, suggesting that Duterte is a prominent topic in Rappler's news articles from January 2018 to May 2019, and at least one article cluster should have Duterte as the recurring theme. Other notable words include government, Philippines, police, and justice. To verify these initial findings, feature extraction and cluster analysis were performed on the dataset.
+<a id="table3"></a> 
+#### Table 3. Itemsets with minimum support of 0.005. 
+<table>
+<thead>
+<tr>
+<th>support</th>
+<th>itemsets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0.006799</code></td>
+<td>(7 Days to Die)</td>
+</tr>
+<tr>
+<td><code>0.009713</code></td>
+<td>(APB Reloaded)</td>
+</tr>
+<tr>
+<td><code>0.010962</code></td>
+<td>(ARK Survival Evolved)</td>
+</tr>
+<tr>
+<td><code>0.009852</code></td>
+<td>(AdVenture Capitalist)</td>
+</tr>
+<tr>
+<td><code>0.014153</code></td>
+<td>(Age of Empires II HD Edition)</td>
+</tr>
+<tr>
+<td><code>"     ..."</code></td>
+<td>"     ..."</td>
+</tr>
+<tr>
+<td><code>0.006660</code></td>
+<td>"(Left 4 Dead 2, The Elder Scrolls V Skyrim, Te..."</td>
+</tr>
+<tr>
+<td><code>0.006244</code></td>
+<td>(Unturned, Left 4 Dead 2, Team Fortress 2)</td>
+</tr>
+<tr>
+<td><code>0.007354</code></td>
+<td>(Unturned, Robocraft, Team Fortress 2)</td>
+</tr>
+<tr>
+<td><code>0.005828</code></td>
+<td>(Unturned, Terraria, Team Fortress 2)</td>
+</tr>
+<tr>
+<td><code>0.006244</code></td>
+<td>(Team Fortress 2, Unturned, Garry's Mod, Count...</td>
+</tr>
+</tbody>
+</table>
+
+Based on the 454 itemsets that passed the minimum support (0.005), we determined the most frequent k-itemsets below.
+
+<a id="table4"></a> 
+#### Table 4. Top 5 Frequent 1-itemsets.
+<table>
+<thead>
+<tr>
+<th>Itemset</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Dota 2</code></td>
+<td>0.3368</td>
+</tr>
+<tr>
+<td><code>Team Fortress 2</code></td>
+<td>0.1618</td>
+</tr>
+<tr>
+<td><code>Counter-Strike Global Offensive</code></td>
+<td>0.0956</td>
+</tr>
+<tr>
+<td><code>Unturned</code></td>
+<td>0.0744</td>
+</tr>
+<tr>
+<td><code>Left 4 Dead 2</code></td>
+<td>0.0561</td>
+</tr>
+</tbody>
+</table>
+
+<a id="table5"></a> 
+#### Table 5. Top 5 Frequent 2-itemsets.
+<table>
+<thead>
+<tr>
+<th>Itemset</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Dota 2, Team Fortress 2</code></td>
+<td>0.0336</td>
+</tr>
+<tr>
+<td><code>Counter-Strike Global Offensive, Dota 2</code></td>
+<td>0.0319</td>
+</tr>
+<tr>
+<td><code>Counter-Strike Global Offensive, Team Fortress 2</code></td>
+<td>0.0309</td>
+</tr>
+<tr>
+<td><code>Team Fortress 2, Unturned</code></td>
+<td>0.0279</td>
+</tr>
+<tr>
+<td><code>Left 4 Dead 2, Team Fortress 2</code></td>
+<td>0.0272</td>
+</tr>
+</tbody>
+</table>
+
+<a id="table6"></a> 
+#### Table 6. Top 5 Frequent 3-itemsets.
+<table>
+<thead>
+<tr>
+<th>Itemset</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Counter-Strike Global Offensive, Dota 2, Team Fortress 2</code></td>
+<td>0.0132</td>
+</tr>
+<tr>
+<td><code>Counter-Strike Global Offensive, Garry's Mod, Team Fortress 2</code></td>
+<td>0.0115</td>
+</tr>
+<tr>
+<td><code>Counter-Strike Global Offensive, Team Fortress 2, Unturned</code></td>
+<td>0.0115</td>
+</tr>
+<tr>
+<td><code>Garry's Mod, Team Fortress 2, Unturned</code></td>
+<td>0.0115</td>
+</tr>
+<tr>
+<td><code>Counter-Strike Global Offensive, Left 4 Dead 2, Team Fortress 2 	</code></td>
+<td>0.0115</td>
+</tr>
+</tbody>
+</table>
+
+The most frequent 1-itemset is Dota 2. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence, which is equal to the following [[5](#ref5)]:
+
+$$ all-confidence (X⇒Y) =  \frac{support(X⇒Y)}{max(support(X), support(Y))} $$
+
+If the all-confidence is equal to 1, then itemsets X and Y always co-occur relatively. This is equivalent to saying that both confidence(X⇒Y) and confidence(Y⇒X) are equal to 1.
+
+Since mlxtend does not compute the all-confidence metric, we implemented a function and found the following frequent 2-itemsets.
+
+<a id="table7"></a> 
+#### Table 7. Top 5 Frequent 2-itemsets (Based on All-Condidence).
+<table>
+<thead>
+<tr>
+<th>Itemset</th>
+<th>All-Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Half-Life 2 Episode One, Half-Life 2 Episode Two</code></td>
+<td>0.6410</td>
+</tr>
+<tr>
+<td><code>Call of Duty Modern Warfare 3, Call of Duty Modern Warfare 3 - Multiplayer</code></td>
+<td>0.5755</td>
+</tr>
+<tr>
+<td><code>Call of Duty Modern Warfare 2, Call of Duty Modern Warfare 2 - Multiplayer 	</code></td>
+<td>0.5436</td>
+</tr>
+<tr>
+<td><code>Call of Duty Black Ops, Call of Duty Black Ops - Multiplayer</code></td>
+<td>0.4912</td>
+</tr>
+<tr>
+<td><code>Total War ROME II - Emperor Edition, Total War SHOGUN 2</code></td>
+<td>0.4444</td>
+</tr>
+</tbody>
+</table>
+
+As observed, the popular game Dota 2 is nowhere to be found in the Top 5. This is because the frequency of 2-itemsets has been computed on a relative basis (all-confidence).
+
+Speaking of all-confidence, this metric seems to be reliable enough for co-occurrence analysis since the above results are quite sensible. For instance, Half-Life 2 Episode One and Half-Life 2 Episode Two are shown to co-occur frequently despite not being popular. Looking at their titles, one is probably a sequel of the other. This means that players are highly interested in completing the game series since the co-occurrence is relatively high.
+
+In addition, Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - Multiplayer appear to co-occur frequently as well. This makes sense since these games are actually related to each other content-wise, not to mention how similar their game titles are. The key difference of these two is that the former has a single-player mechanics while the latter is multiplayer-oriented which requires interaction with other players. Hence, it seems that many of those who played the single player campaign also wanted to try the multiplayer mode, and vice-versa.
+
+To avoid the limitation of the support-confidence framework (i.e., high support and high confidence could happen by chance), we primarily use the evaluation metric 'lift' to find more meaningful associations. The idea is to provide recommendations based on strongly correlated video games.
+
+
 
 ## RESULTS
-To determine the optimal number of clusters, k-means clustering was implemented for different values of the cluster count k from k=2 to k=20. Shown in [Figure 3](#fig3) is the variation in the values of the different internal validation measures as the cluster count k is increased. The silhouette coefficient is monotonically increasing as the number of clusters is increased, suggesting increasing separation of the clusters. However, to keep the clustering parsimonious, the SSE elbow method was used instead to determine the optimal value of k. From the graph below, the SSE graph has an elbow at around **k=10**, suggesting optimal clustering at that value.   
-
-![Figure 3]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_validation.png)
-<a id="fig3"></a> 
-#### Figure 3 Plots of the various internal validation measures for k=2 to k=20. The SSE graph has an elbow at k=10, suggesting optimal clustering at that value. 
-
-### 1. Article clusters (k=10)
-k-means clustering was performed on the Rappler articles using a cluster count of k=10. To infer the underlying theme of each article cluster, cluster word clouds were created as shown in [Figure 4](#fig4).
-
-Form these word clouds, the underlying theme of each article cluster was identified as follows:
-
-- **Cluster 1**: Legislative
-- **Cluster 2**: Foreign Affairs (PH-China Relations)
-- **Cluster 3**: General News
-- **Cluster 4**: Judiciary
-- **Cluster 5**: Weather
-- **Cluster 6**: President Rodrigo Duterte
-- **Cluster 7**: 2019 Philippine Midterm Elections
-- **Cluster 8**: Police
-- **Cluster 9**: Boracay Rehabilitation
-- **Cluster 10**: Health
-
-![Figure 4]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_wordcloud.png)
-<a id="fig4"></a> 
-#### Figure 4 Word cloud for each article cluster (k=10). From these word clouds, the underlying theme for each article cluster were identified as follows: Cluster 1 (Legislative); Cluster 2 (Foreign Affairs); Cluster 3 (General News); Cluster 4 (Judiciary); Cluster 5 (Weather); Cluster 6 (President Rodrigo Duterte); Cluster 7 (2019 Philippine Midterm Elections); Cluster 8: (Police); Cluster 9 (Boracay Rehabilitation); Cluster 10 (Health)
-
-Shown in [Figure 5](#fig5) is the relative size of the clusters in terms of the number of articles. Excluding the General News cluster which accounts for more than 25% of the articles, **Duterte is the largest article cluster**, comprising more than 15% of the news articles. This validates the initial results of the exploratory data analysis. 
-
-![Figure 5]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_themes_10.png) 
-<a id="fig5"></a> 
-#### Figure 5. Resulting article themes for k=10. The clusters are relatives balanced in terms of cluster size, except for one cluster (General News) which contains more than 25% of all articles. Excluding the General News cluster, the Duterte cluster accounts for the most number of articles. 
-
-## INSIGHTS
-The application of unsupervised clustering technique on a corpus of 11,079 news articles shows a consistency of topic clusters across different resolutions that include:
-
-### A. Duterte article cluster
-The **dominant theme of Rappler news articles is Philippine President Rodrigo Duterte**, with nearly 16% of news articles in this cluster. As seen in [Figure 6](#fig6), subthemes in this cluster include the war on drugs, human rights, Senator Antonio Trillanes, and Duterte’s ongoing war versus Rappler. This can imply that Rappler is particular with the President’s undertakings and that while this may be reasonable, Rappler has to review its focus given their strife with the President.
-
-![Figure 6]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_duterte.png) 
-<a id="fig6"></a> 
-#### Figure 6. Word cloud and top words for the Duterte article cluster. From the top words, it can be inferred that the subthemes of this cluster include human rights violations, the war on illegal drugs, and Senator Antonio Trillanes.
-
-### B. Philippine Politics article cluster (Legislative and Judiciary)
-The other major themes are related to the other branches of the Philippine government, particularly the **Legislative branch** (House of Representatives, Senate) and the **Judicial branch** (Supreme Court). 
-
-Subthemes in the Judicial cluster ([Figure 7](#fig7)) are the impeachment of former Chief Justice Maria Lourdes Sereno and Leila de Lima. Impeachment of former Chief Justice Lourdes Sereno because of failure to disclose assets in her SALN, and misuse of public funds among other things. Drug charges filed by the DOJ against Senator Leila de Lima.
-
-![Figure 7]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_judiciary.png)
-<a id="fig7"></a> 
-#### Figure 7. Word cloud and top words for the Judiciary article cluster. From the top words, it can be inferred that the subthemes of this cluster include the impeachment of former Chief Justice Lourdes Sereno and the drug cases against Senator Leila De Lima.
-
-Subthemes in the Legislative article cluster ([Figure 8](#fig8)) are budget Proposed changes in the constitution to shift to a federal type of government. Like the dominant clusters, this cluster focus on politics. It is apparent that Rappler is focused on the political landscape in the Philippines with a particular focus on hot and relevant issues.
-
-![Figure 8]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_legislative.png)
-<a id="fig8"></a> 
-#### Figure 8. Wordcloud and top words for the Legislative article cluster. From the top words, it can be inferred that the subthemes of this cluster include the national budget and the proposed shift to a federal system.
-
-### C. Police and Weather Clusters
-Two recurring themes regardless of the number of clusters selected are police reports ([Figure 9](#fig9)) and weather reports ([Figure 10](#fig10)). In line with the Duterte cluster,  it is sensible that the cluster about the police can be generated given the “oplan tokhang” implemented by the administration. Meanwhile, the weather cluster is sound considering the country’s geographic circumstances.   
-
-![Figure 9]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_pnp.png)
-<a id="fig9"></a> 
-#### Figure 9. (a) Wordcloud and (b) Top words in the Police article cluster
-
-![Figure 10]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_weather.png)
-<a id="fig10"></a> 
-#### Figure 10.  (a) Wordcloud and (b) Top words in the Weather article cluster
-
-### D. Time-specific article clusters
-The remaining themes are time-related and reflect major events during the timeframe selected (January 2019 to May 2019), such as the **2019 Philippine Midterm Elections**, **Boracay Island Rehabilitation** (April 2018-October 2018), and the **Dengvaxia (dengue vaccine) controversy**.
-
-![Figure 11a]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_current.png)
-![Figure 11b]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_boracay.png)
-![Figure 11c]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_health.png)
-<a id="fig11"></a> 
-#### Fig 11. Time-specific article clusters (a) 2019 Midterm Elections, (b) Boracay Rehabilitation, (c) Dengue vaccine (Dengvaxia) controversy
-
-### E. Sensitivity Analysis
-While it was concluded that 10 is the optimal number of groupings for the subject dataset, sensitivity analysis has been performed to test the robustness of the results gathered. Shown below are the resulting article clusters for k=6 ([Figure 12](#fig12)) and k=16 ([Figure 13](#fig13)). It is noted that as the cluster count is increased, the most affected clusters are bigger ones, especially the _Duterte_ cluster. As such, it can be deduced that said cluster has many subclusters which are differentiated when cluster count is increased. Nevertheless, the core clusters (e.g., General News, Duterte, 2019 Election, Police) created regardless of the number of clusters are constant. 
-
-![Figure 12]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_6.png)
-<a id="fig12"></a> 
-#### Figure 12. Clustering and Cluster size distribution for k=6
-
-![Figure 13]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_16.png)
-<a id="fig13"></a> 
-#### Figure 13. Clustering and Cluster size distribution for k=16
 
 ## SUMMARY AND CONCLUSIONS
-Grouping of articles into clusters of related topics by unsupervised clustering method has  significant value to communication researchers and media practitioners in studying news output at scale and its repercussions. This study was able to _unwrap 10 major themes_ ranging from General News, Politics, Weather, Health and relevant events. As such, the result can be used as a starting point for a generalized theme extraction project from a national corpus to learn the general interest and sentiments of the people.
 
 ## RECOMMENDATIONS
-The following points can be considered in future research related to this work:
-
-- **Comparative cluster analysis with other Philippine news outfits** (Inquirer, ABS-CBN News, GMA News) can be explored to validate Rappler’s focus on particular topics;
-- **Sentiment analysis can explored to look into the subjective information or emotional states of the article**. The value of combining clustering with sentiment analysis could be implemented in making better sense of Rappler’s public opinion on trending issues or the current administration; and,
-- **Historical analysis can be explored to compare the Rappler data during previous administrations with the current to recognize the difference in Rappler’s focus per administration.** Administration changes can affect the political landscape and prioritization of complex issues. For instance, if an issue from one administration was solved in the next administration.
 
 ## REFERENCES
 [1] <a id='ref1'></a>M. Snider, Video games can be a healthy social pastime during coronavirus pandemic, USA Today, March 29, 2020. [Online]. Available: [https://www.usatoday.com/story/tech/gaming/2020/03/28/videogames-whos-prescription-solace-during-coronaviruspandemic/2932976001/](https://www.usatoday.com/story/tech/gaming/2020/03/28/videogames-whos-prescription-solace-during-coronaviruspandemic/2932976001/). [Accessed May 7, 2020].
