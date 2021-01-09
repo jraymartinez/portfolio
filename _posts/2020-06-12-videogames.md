@@ -9,17 +9,64 @@ date:   2020-06-12 16:50:00 +0800
 categories: projects
 mathjax: "true"
 excerpt: "In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together."
-tags: [natural language processing, unsupervised learning, clustering, theme extraction, Rappler, data mining]
+tags: [recommender system, video games, association rules]
 ---
 
 ## AUTHORS
-[John Ray Martinez](https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
+[John Ray Martinez](https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), and [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
 
 <sub> *This research is implemented in fulfillment of the requirements for the Data Mining Course of Master of Science in Data Science under Drexel University College of Computing & Informatics* </sub>
 
 
 ## INTRODUCTION
 Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [1]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [2]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
+
+## DATA DESCRIPTION
+
+Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [3]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
+
+As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [4]:
+
+
+<a id="table1"></a> 
+#### Table 1. Sample Filtered Dataset
+<table>
+<thead>
+<tr>
+<th>User Id</th>
+<th>Games Played</th>
+<th>Number of Hours Played</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>298950</code></td>
+<td>ARK Survival Evolved</td>
+<td>41.0</td>
+</tr>
+<tr>
+<td><code>76767</code></td>
+<td>Call of Duty Modern Warfare 2</td>
+<td>65.0</td>
+</tr>
+<tr>
+<td><code>76767</code></td>
+<td>Banished</td>
+<td>24.0</td>
+</tr>
+<tr>
+<td><code>229911</code></td>
+<td>Call of Duty Modern Warfare 2</td>
+<td>44.0</td>
+</tr>
+<tr>
+<td><code>86540</code></td>
+<td>Audiosurf</td>
+<td>57.0</td>
+</tr>
+</tbody>
+</table>
+
 
 ## METHODOLOGY
 To uncover the underlying themes, a total of **11,079 news articles** published from **January 2018 to May 2019** were retrieved from Rappler's Nation section (`https://www.rappler.com/nation`). The general workflow for clustering the Rappler articles as shown in [Figure 1](#fig1) involves the following steps:
