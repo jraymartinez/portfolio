@@ -1,8 +1,8 @@
 ---
 layout: single
 header:
-  teaser: /assets/images/dota2.PNG
-  image: /assets/images/gamestop.PNG
+  teaser: /assets/images/dota2.png
+  image: /assets/images/gamestop.png
   caption: "Photo credit: [**www.gamestop.com**](https://www.gamestop.com/)
 title: "Identifying Co-occurrence Based on Hours Played for Video Games"
 date:   2020-06-12 16:50:00 +0800
@@ -22,11 +22,9 @@ tags: [recommender system, video games, association rules]
 Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [1]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [2]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
 
 ## DATA DESCRIPTION
-
 Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [3]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
 
 As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [4]:
-
 
 <a id="table1"></a> 
 #### Table 1. Sample Filtered Dataset
