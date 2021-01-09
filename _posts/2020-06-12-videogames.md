@@ -1,8 +1,8 @@
 ---
 layout: single
 header:
-  teaser: /assets/images/dota2.png
-  image: /assets/images/gamestop.png
+  teaser: /assets/images/dota2.PNG
+  image: /assets/images/gamestop.PNG
   caption: "Photo credit: [**www.gamestop.com**](https://www.gamestop.com/)
 title: "Identifying Co-occurrence Based on Hours Played for Video Games"
 date:   2020-06-12 16:50:00 +0800
