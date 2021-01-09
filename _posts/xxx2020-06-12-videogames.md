@@ -14,7 +14,7 @@ excerpt: "In this project, we create a game-based recommender system using assoc
 ---
 
 ## AUTHORS
-[John Ray Martinez](https://jraymartinez.github.io/) (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
+[John Ray Martinez](https://jraymartinez.github.io/) (jbm332@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
 
 <sub> *This research is implemented in fulfillment of the requirements for the Data Mining Course of Master of Science in Data Science under Drexel University College of Computing & Informatics* </sub>
 
