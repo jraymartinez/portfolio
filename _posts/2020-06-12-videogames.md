@@ -14,18 +14,18 @@ excerpt: "In this project, we create a game-based recommender system using assoc
 ---
 
 ## AUTHORS
-[John Ray Martinez](https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
+[John Ray Martinez](https://jraymartinez.github.io/) (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
 
 <sub> *This research is implemented in fulfillment of the requirements for the Data Mining Course of Master of Science in Data Science under Drexel University College of Computing & Informatics* </sub>
 
 
 ## INTRODUCTION
-Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [[1](#ref1)]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [[1](#ref2)]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
+Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [[1](#ref1)]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [[2](#ref2)]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
 
 ## DATA DESCRIPTION
-Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [[1](#ref1)]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
+Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [[3](#ref3)]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
 
-As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [[1](#ref1)]:
+As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [[4](#ref4)]:
 
 <a id="table1"></a> 
 #### Table 1. Sample Filtered Dataset
@@ -68,92 +68,7 @@ As per Kaggle documentation, the dataset which is approximately nine megabytes o
 
 
 ## METHODOLOGY
-To uncover the underlying themes, a total of **11,079 news articles** published from **January 2018 to May 2019** were retrieved from Rappler's Nation section (`https://www.rappler.com/nation`). The general workflow for clustering the Rappler articles as shown in [Figure 1](#fig1) involves the following steps:
-
-1. Data Extraction
-2. Data Storage
-3. Data Preprocessing
-4. Exploratory Data Analysis
-4. Feature Extraction via TFIDF Vectorization
-5. Dimensionality Reduction using Latent Semantic Analysis (LSA)
-6. Unsupervised clustering using *k*-means algorithm
-
-Each step of the workflow will be discussed in the succeeding sections. 
-
-![Figure 1]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_methodology.png)
-<a id="fig1"></a> 
-#### Figure 1. Workflow for clustering the Rappler articles 
-
-### 1. Data Extraction
-News articles published from January 2018 to May 2019 were extracted from the [Rappler's Nation section](https://www.rappler.com/nation) via web scraping tools, specifically Python’s `requests` and `BeautifulSoup` modules. The process involved extracting the article text and selected metadata. Initial cleaning was also implemented to remove image captions, author and photographer details, location headers, hyperlinks, social media texts, and general sign-offs.
-
-### 2. Data Storage
-The extracted articles were stored in a local `sqlite` database. A total of 11,079 news articles were stored in the database. [Table 1](#table1) shows the data description:
-
-<a id="table1"></a> 
-#### Table 1. Data dictionary
-<table>
-<thead>
-<tr>
-<th>Data</th>
-<th>Data type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>article_id</code></td>
-<td>VARCHAR</td>
-<td>Unique ID identifier</td>
-</tr>
-<tr>
-<td><code>url</code></td>
-<td>VARCHAR</td>
-<td>Relative URL</td>
-</tr>
-<tr>
-<td><code>headline</code></td>
-<td>VARCHAR</td>
-<td>Headline title</td>
-</tr>
-<tr>
-<td><code>metadesc</code></td>
-<td>VARCHAR</td>
-<td>Quick synopsis of the article</td>
-</tr>
-<tr>
-<td><code>label</code></td>
-<td>VARCHAR</td>
-<td>Absolute URL</td>
-</tr>
-<tr>
-<td><code>author</code></td>
-<td>VARCHAR</td>
-<td>Author name(s)</td>
-</tr>
-<tr>
-<td><code>published_date</code></td>
-<td>VARCHAR</td>
-<td>Published date</td>
-</tr>
-<tr>
-<td><code>updated_date</code></td>
-<td>VARCHAR</td>
-<td>Date updated</td>
-</tr>
-<tr>
-<td><code>article</code></td>
-<td>VARCHAR</td>
-<td>Article text</td>
-</tr>
-<tr>
-<td><code>metakey</code></td>
-<td>VARCHAR</td>
-<td>List of metatags associated with the article</td>
-</tr>
-</tbody>
-</table>
-
+We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe should represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than a specified number of hours; otherwise, its value is 0. Afterwards, we would likely utilize the python library MLXtend to automatically perform the apriori principle to determine the frequent itemsets. The said library could also generate association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on these rules, not only can we create meaningful insights but also can provide recommendations with respect to associated or correlated video games.
 
 ### 3. Data Preprocessing
 Data preprocessing was implemented on the acquired article text. The text preprocessing involves:
@@ -164,63 +79,6 @@ Data preprocessing was implemented on the acquired article text. The text prepro
 
 ### 4. Exploratory Data Analysis 
 To see if some obvious themes or topics stand out in the article corpus, exploratory data analysis was performed on the data before clustering. [Figure 2](#fig2) shows the word cloud and word frequency graph for the Rappler news articles published from January 2018 to May 2019. Both show that **President Rodrigo Duterte is the most mentioned word in the dataset**, suggesting that Duterte is a prominent topic in Rappler's news articles from January 2018 to May 2019, and at least one article cluster should have Duterte as the recurring theme. Other notable words include government, Philippines, police, and justice. To verify these initial findings, feature extraction and cluster analysis were performed on the dataset.
-
-![Figure 2]({{ site.url }}{{ site.baseurl }}/assets/images/rappler_eda.png)
-<a id="fig2"></a> 
-#### Figure 2. Exploratory analysis of Rappler news articles published from January 2018 to May 2019 (a) word cloud of the Rappler news articles (b) word count of the 15 most occurring words in the Rappler article corpus. Both the word cloud and the word frequency graph show that Philippine President Rodrigo Duterte is the top topic during the period selected. 
-
-### 5. Feature Extraction
-Features were extracted from the article corpus using a term frequency-inverse document frequency (TF-IDF) vectorizer was implemented, via scikit-learn’s `Tfidfvectorizer`. As opposed to an equal weighting vectorizer, the TF-IDF statistic measures how important a word is to the document and the corpus. 
-
-[Table 2](#table2) shows the additional parameters that were taken into consideration: 
-
-<a id="table2"></a>
-#### Table 2. Hyperparameters used in the TF-IDF vectorizer
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>min_df</code></td>
-<td>ignore terms that have a document frequency strictly lower than the given threshold</td>
-<td>0.001</td>
-</tr>
-<tr>
-<td><code>max_df</code></td>
-<td>ignore terms that have a document frequency strictly higher than the given threshold</td>
-<td>0.7</td>
-</tr>
-<tr>
-<td><code>ngram_range</code></td>
-<td>The lower and upper boundary of the range of n-values for different n-grams to be extracted. All values of n such that min_n <= n <= max_n will be used</td>
-<td>(1,3)</td>
-</tr>
-</tbody>
-</table>
-
-
-The `TFidfVectorizer` performs further cleaning of the data by removing both frequent words and rare words. *Stopwords*, or words that appear too frequently in the English and Filipino language (e.g., the, a, an, and, or), were dropped from the corpus. Rappler-specific stopwords, or words that appear in more than 70% of the titles, were also ignored by setting the `max_df` parameter of `TFidfVectorizer` to `max_df = 0.7`.
-
-Rare words, or words that appeared in less than 0.1% of the Rappler articles, were also excluded from the corpus. This was implemented by setting the `min_df` parameter of the `TFidfVectorizer` to `min_df = 0.001`.
-
-Unigrams, bigrams, and trigrams were extracted as part of the vocabulary by setting the `ngram_range` parameter of the `TFidfVectorizer` to `ngram_range = (1,3)`. This range of n-grams was chosen to preserve the context of certain phrases such as "Rodrigo Duterte", "Supreme Court" (n=2), and "Philippine National Police" (n=3)
-
-After vectorization, the collection of Rappler articles has **36,254 unique items** in its vocabulary.
-
-### 6. Dimensionality Reduction
-The resulting feature set is a 10,873 by 36,254 matrix. It would be computationally expensive to perform clustering on a dataset this large. To minimize computational power,  dimensionality reduction was performed on the vectorized data via **latent semantic analysis (LSA)**. This was implemented using the `TruncatedSVD` class of `sklearn`.
-
-As a general rule for LSA, fewer dimensions allow for broader comparisons of the themes contained in a collection of text, while a higher number of dimensions enable more specific comparisons of themes. A dimensionality between 50 and 1,000 are suitable depending on the size and nature of the document collection. Sensitivity analysis was performed to identify the optimum number of components. The sensitivity analysis started with 50 components up until 1000 components, with steps of 50.  The analysis observed using n = 300 components extracted the broader underlying themes.
-
-### 7. Unsupervised Clustering
-To extract the underlying themes of the Rappler news articles, unsupervised clustering using k-means algorithm was implemented on the reduced dataset. Sensitivity analysis was performed using different cluster counts, ranging from k=2 to k=20. Selecting the optimum number of clusters relied on examining the internal validation criteria: (1) minimizing the Intracluster to Intercluster distance ratio, (2) maximizing the Calinski-Harabasz score, (3) maximizing the Silhouette coefficient, and (4) minimizing the sum of square distance to centroids coefficient. 
-
-The optimum value of cluster counts and the resulting article clusters will be discussed in the next section.
 
 ## RESULTS
 To determine the optimal number of clusters, k-means clustering was implemented for different values of the cluster count k from k=2 to k=20. Shown in [Figure 3](#fig3) is the variation in the values of the different internal validation measures as the cluster count k is increased. The silhouette coefficient is monotonically increasing as the number of clusters is increased, suggesting increasing separation of the clusters. However, to keep the clustering parsimonious, the SSE elbow method was used instead to determine the optimal value of k. From the graph below, the SSE graph has an elbow at around **k=10**, suggesting optimal clustering at that value.   
