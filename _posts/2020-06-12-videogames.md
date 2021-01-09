@@ -14,18 +14,18 @@ excerpt: "In this project, we create a game-based recommender system using assoc
 ---
 
 ## AUTHORS
-[John Ray Martinez](https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), and [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
+[John Ray Martinez](https://jraymartinez.github.io/)  (johnray.balistoy.martinez@drexel.edu), [Jonathan Musni](https://www.linkedin.com/in/jonathan-musni-624773134/) (jem472@drexel.edu), [Marvin Joseph Occeno](https://www.linkedin.com/in/marvin-joseph-occeno-8b4a95120/) (mr048@drexel.edu)
 
 <sub> *This research is implemented in fulfillment of the requirements for the Data Mining Course of Master of Science in Data Science under Drexel University College of Computing & Informatics* </sub>
 
 
 ## INTRODUCTION
-Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [1]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [2]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
+Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [[1](#ref1)]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [[1](#ref2)]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
 
 ## DATA DESCRIPTION
-Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [3]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
+Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [[1](#ref1)]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
 
-As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [4]:
+As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [[1](#ref1)]:
 
 <a id="table1"></a> 
 #### Table 1. Sample Filtered Dataset
@@ -322,14 +322,12 @@ The following points can be considered in future research related to this work:
 - **Historical analysis can be explored to compare the Rappler data during previous administrations with the current to recognize the difference in Rappler’s focus per administration.** Administration changes can affect the political landscape and prioritization of complex issues. For instance, if an issue from one administration was solved in the next administration.
 
 ## REFERENCES
-[1] <a id='ref1'></a>"Duterte says he banned Rappler due to 'twisted' reporting", [https://www.rappler.com/nation/197230-duterte-rappler-ban-twisted-reporting](https://www.rappler.com/nation/197230-duterte-rappler-ban-twisted-reporting)
+[1] <a id='ref1'></a>M. Snider, Video games can be a healthy social pastime during coronavirus pandemic, USA Today, March 29, 2020. [Online]. Available: [https://www.usatoday.com/story/tech/gaming/2020/03/28/videogames-whos-prescription-solace-during-coronaviruspandemic/2932976001/](https://www.usatoday.com/story/tech/gaming/2020/03/28/videogames-whos-prescription-solace-during-coronaviruspandemic/2932976001/). [Accessed May 7, 2020].
 
-[2] <a id="ref2"></a>"Duterte calls Rappler 'fake news outlet", [https://www.rappler.com/nation/193806-duterte-fake-news-outlet](https://www.rappler.com/nation/193806-duterte-fake-news-outlet)
+[2] <a id="ref2"></a>P. Bertens, A. Guitart, P. P. Chen and A. Perianez, A Machine-Learning Item Recommendation System for Video Games, 2018 IEEE Conference on Computational Intelligence and Games (CIG), Maastricht, 2018, pp. 1-4, doi: 10.1109/CIG.2018.8490456.
 
-[3] [https://towardsdatascience.com/all-the-news-17fa34b52b9d](https://towardsdatascience.com/all-the-news-17fa34b52b9d)
+[3] <a id="ref3"></a>O’Neill, M., Vaziripour, E., Wu, J., Zappala, D.: Condensing steam: distilling the diversity of gamer behavior. In Proceedings of the 2016 Internet Measurement Conference, IMC 2016, pp. 81-95. ACM, New York (2016). [https://doi.org/10.1145/2987443.2987489](https://doi.org/10.1145/2987443.2987489.).
 
-[4] [https://seangtkelley.me/blog/2018/01/03/news-article-clustering](https://seangtkelley.me/blog/2018/01/03/news-article-clustering)
+[4] <a id="ref4"></a>Tamber Team. (2017, March). Steam Video Games. Retrieved May 10, 2020 from [https://www.kaggle.com/tamber/steam-video-games/](https://www.kaggle.com/tamber/steam-video-games/).
 
-[5] [https://scikit-learn.org/stable/auto_examples/text/plot_document_clustering.html#sphx-glr-auto-examples-text-plot-document-clustering-py](https://scikit-learn.org/stable/auto_examples/text/plot_document_clustering.html#sphx-glr-auto-examples-text-plot-document-clustering-py)
-
-[6] [http://www.scholarpedia.org/article/Latent_semantic_analysis](http://www.scholarpedia.org/article/Latent_semantic_analysis)
+[5] <a id="ref5"></a>D. J. Prajapati, S. Garg and N. C. Chauhan," Interesting association rule mining with consistent and inconsistent rule detection from big sales data in distributed environment, " Future Computing and Informatics Journal, pp. 1-12, 2017.
