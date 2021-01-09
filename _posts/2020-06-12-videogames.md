@@ -8,8 +8,9 @@ title: "Identifying Co-occurrence Based on Hours Played for Video Games"
 date:   2020-06-12 16:50:00 +0800
 categories: projects
 mathjax: "true"
-excerpt: "In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together."
+linkedin: "true"
 tags: [recommender system, video games, association rules]
+excerpt: "In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together."
 ---
 
 ## AUTHORS
