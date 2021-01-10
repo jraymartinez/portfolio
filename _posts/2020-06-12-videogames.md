@@ -312,9 +312,9 @@ Based on the 454 itemsets that passed the minimum support (0.005), we determined
 </tbody>
 </table>
 
-The most frequent 1-itemset is Dota 2. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence, which is equal to the following equation [[5](#ref5)]:
+The most frequent 1-itemset is Dota 2. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence [[5](#ref5)], which is equal to the equation 1 below.
 
-all-confidence(X⇒Y) =  support(X⇒Y) / max(support(X), support(Y))
+                   all-confidence(X⇒Y) =  support(X⇒Y) / max(support(X), support(Y))       (1)
 
 If the all-confidence is equal to 1, then itemsets X and Y always co-occur relatively. This is equivalent to saying that both confidence(X⇒Y) and confidence(Y⇒X) are equal to 1.
 
