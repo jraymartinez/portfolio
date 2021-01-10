@@ -362,12 +362,61 @@ In addition, Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - M
 To avoid the limitation of the support-confidence framework (i.e., high support and high confidence could happen by chance), we primarily use the evaluation metric 'lift' to find more meaningful associations. The idea is to provide recommendations based on strongly correlated video games.
 
 
-
 ## RESULTS
+Sorted based on highest lift, the generated rules are consistent with our results earlier. Half-Life 2 Episode One and Half-Life 2 Episode Two are part of the top list. Having a huge lift of 65.07, these two games indeed have strong, positive correlation. Moreover, it is expected that Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - Multiplayer are also strongly correlated with a lift of 41.47.
 
-## SUMMARY AND CONCLUSIONS
+<a id="table8"></a> 
+#### Table 8. Sample of Interesting Rules.
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A Support</th>
+<th>B Support</th>
+<th>support(A⇒B)</th>
+<th>confidence(A⇒B)</th>
+<th>lift</th>
+<th>leverage</th>
+<th>conviction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(The Elder Scrolls V Skyrim)</code></td>
+<td>(Fallout 4)</td>
+<td>0.047315</td>
+<td>0.011794</td>
+<td>0.005273</td>
+<td>0.111437</td>
+<td>9.448542</td>
+<td>0.004715</td>
+<td>1.112139</td>
+</tr>
+<tr>
+<td><code>(The Elder Scrolls V Skyrim)</code></td>
+<td>(BioShock Infinite)</td>
+<td>0.047315</td>
+<td>0.014847</td>
+<td>0.006244</td>
+<td>0.131965</td>
+<td>8.888508</td>
+<td>0.005541</td>
+<td>1.134923</td>
+</tr>
+</tbody>
+</table>
 
-## RECOMMENDATIONS
+One rule that we find cool enough is rule 208, which states that The Elder Scrolls V Skyrim and Fallout 4 are highly correlated with a lift of 9.45. Amazingly, we have found out that bundles of these two games are currently being sold not only on Steam but also on the PlayStation Store. It seems that Steam and PlayStation are aware that players frequently played these two games together before, and that's why these games are recently being sold as a bundle for both [PC](https://store.steampowered.com/bundle/6527/Skyrim_Special_Edition__Fallout_4_GOTY/) and [PS4](https://store.playstation.com/en-us/product/UP1003-CUSA02557_00-FO4GOTYSSEBUNDLE) console gaming. 
+
+Another interesting rule is rule 24, indicating that The Elder Scrolls V Skyrim and BioShock Infinite are also highly correlated with a lift of 8.89. We have found out that a bundle of these two games, for PlayStation 3 this time, are actually being sold on [Amazon.com](https://www.amazon.com/Elder-Scrolls-Skyrim-Bioshock-Infinite-PlayStation/dp/B00HV0MNEI). Again, this means that these two games might really have a strong association and that's why they're being sold as part of a bundle.
+
+## DISCUSSION AND FUTURE WORKS
+In this study, after trying multiple thresholds, we learned that the threshold of 0.5% provides acceptable interpretability of results. We use this support threshold to consider a set of frequent video games played. It means a game set is deemed to be frequent if this set is observed in at least 0.5% of the data set of video games. Please note that the a frequent set should have at least one game while the number of games in the set cannot exceed three.
+
+The result of the adopted approach can be summarized as follows. We show that Dota 2 is the most frequent played game. Although not as frequent as Dota 2, Team Fortress 2 is the second game observed. However, the impacts of co-occurrences of these two games are observed in frequent 2-itemsets and 3-itemsets results. Considering this observation that the popular games will always co-occur more than the others, we adopt a good strategy to perform other interesting measure 'all confidence'. As a result, popular games are not in the top games co-occurrences and the most common pair of co-occurring games is composed of Half-Life 2 Episode One and Half-Life 2 Episode Two which are obviously associated to each other being a prequel-sequel pair.
+
+Furthermore, we focused on the video games co-occurrence analyis in a data set to come up with video games recommendation system. With the help of library MLxtend, we built the system that primarily use the built-in interesting measure 'lift' to recommend associated games. This system is able to identify meaningful associations from our co-occurrence analysis and provide games recommendations to the user. Interestingly, some of its association rules found are exactly the same game pairs sold as a bundle for both PC and PS4 console gaming. However, we are dealing with a huge number of games which is potential for large number of null transactions and the built-in interesting measure 'lift' is a not null-invariant measure. This means that 'lift' can be easily affected by null transactions giving a chance for the system to provide the user with a bad recommendation. With this, in the next study, we are going to focus on tasks of comparing different null-invariant measures such as 'all confidence', 'Kulczynski', etc. Since there is no such readily-made functions or modules that implement those measures, we need to create ones and integrate to the recommendation system. It will be interesting to see the the impacts of null-invariant measures along with not null-invariant to the association rules. Moreover, another avenue of future research that we would like to explore is the predictive power of individual and co-occurring frequent video games for the category of games. This idea is based on this fact that some of the video games are frequent in a specific category of games.
 
 ## REFERENCES
 [1] <a id='ref1'></a>M. Snider, Video games can be a healthy social pastime during coronavirus pandemic, USA Today, March 29, 2020. [Online]. Available: [https://www.usatoday.com/story/tech/gaming/2020/03/28/videogames-whos-prescription-solace-during-coronaviruspandemic/2932976001/](https://www.usatoday.com/story/tech/gaming/2020/03/28/videogames-whos-prescription-solace-during-coronaviruspandemic/2932976001/). [Accessed May 7, 2020].
