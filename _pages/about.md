@@ -14,7 +14,7 @@ permalink: /about/
 #### Master of Science in Data Science 
 *[Drexel University](https://www.drexel.edu/)*<br/>
 June 2021
-- Ongoing (GPA 4.00/4.00)
+- Ongoing (CGPA 4.00/4.00)
 - Capstone Project: Multimodal Brain Tumor Segmentation using Convolutional Neural Network
 - DXC Technology-Drexel University Scholar
 
