@@ -68,7 +68,7 @@ As per Kaggle documentation, the dataset which is approximately nine megabytes o
 
 
 ## METHODOLOGY
-We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than or equal to the median number of hours played; otherwise, its value is 0. Afterwards, we would utilizez the python library MLXtend to automatically perform the apriori principle to determine the frequent itemsets. The library also generated association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on this discretization, we generated association rules and built a recommender system.
+We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than or equal to the median number of hours played; otherwise, its value is 0. We utilized the python library MLXtend to automatically perform the Apriori principle to determine the frequent itemsets. The library also generated association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on this discretization, we generated association rules and built a recommender system.
 
 <a id="table2"></a> 
 #### Table 2. Sample Transformed Dataset.
@@ -151,7 +151,7 @@ We transformed the dataset into a matrix of 1s and 0s. The columns of the new da
 </tbody>
 </table>
 
-### 3. Quantitative Association Rules
+### Quantitative Association Rules
 Here comes the fun part - finding association rules. The first step is to determine frequent itemsets. Since the data is relatively large, we have decided to set the minimum support to 0.005. 
 
 <a id="table3"></a> 
