@@ -23,7 +23,7 @@ excerpt: "In this project, we create a game-based recommender system using assoc
 Playing video games has always been a popular leisure activity. Recently, in light of the pandemic, people are actually encouraged to play such video games to ensure that they do stay at home [[1](#ref1)]. To let gamers keep on playing more, recommendation engines are being utilized by several online video game stores. Players receive various game suggestions which are usually based on, but not limited to, their gaming history [[2](#ref2)]. In this project, we create a game-based recommender system using association rules mining with respect to the video games that were frequently played together. The objectives of this study are to: i) identify the most played video games; ii) identify the frequent co-occurring video games; and iii) provide recommendations based on correlated video games.
 
 ## DATA DESCRIPTION
-Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [[3](#ref3)]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API three years ago.
+Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [[3](#ref3)]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API in 2017.
 
 As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [[4](#ref4)]:
 
@@ -312,9 +312,9 @@ Based on the 454 itemsets that passed the minimum support (0.005), we determined
 </tbody>
 </table>
 
-The most frequent 1-itemset is Dota 2. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence, which is equal to the following [[5](#ref5)]:
+The most frequent 1-itemset is Dota 2. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence, which is equal to the following equation [[5](#ref5)]:
 
-$$ all-confidence (X⇒Y) =  \frac{support(X⇒Y)}{max(support(X), support(Y))} $$
+all-confidence(X⇒Y) =  \frac{support(X⇒Y)}{max(support(X), support(Y))}
 
 If the all-confidence is equal to 1, then itemsets X and Y always co-occur relatively. This is equivalent to saying that both confidence(X⇒Y) and confidence(Y⇒X) are equal to 1.
 
