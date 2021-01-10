@@ -185,12 +185,12 @@ Here comes the fun part - finding association rules. The first step is to determ
 <td>(Age of Empires II HD Edition)</td>
 </tr>
 <tr>
-<td><code>"     ..."</code></td>
-<td>"     ..."</td>
+<td><code>     ...</code></td>
+<td>     ...</td>
 </tr>
 <tr>
 <td><code>0.006660</code></td>
-<td>"(Left 4 Dead 2, The Elder Scrolls V Skyrim, Te..."</td>
+<td>(Left 4 Dead 2, The Elder Scrolls V Skyrim, Te...</td>
 </tr>
 <tr>
 <td><code>0.006244</code></td>
