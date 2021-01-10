@@ -25,7 +25,7 @@ Playing video games has always been a popular leisure activity. Recently, in lig
 ## DATA DESCRIPTION
 Steam, the largest digital distribution platform for PC gaming, has 6000 games and a community of millions of gamers. One study shows that searchability is one of the reasons why Steam is growing so rapidly [[3](#ref3)]. Moreover, it has experienced explosive growth in 2018. This platform attracted a lot of companies to source out their data. Tamber, an analytics service company, was able to manually crawl the data from the Steam API in 2017.
 
-As per Kaggle documentation, the dataset which is approximately nine megabytes of data is represented into the following columns [[4](#ref4)]:
+As per Kaggle documentation [[4](#ref4)], the dataset which is approximately nine megabytes of data is represented into the following columns:
 
 <a id="table1"></a> 
 #### Table 1. Sample Filtered Dataset.
@@ -68,7 +68,7 @@ As per Kaggle documentation, the dataset which is approximately nine megabytes o
 
 
 ## METHODOLOGY
-We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than or equal to the median number of hours played; otherwise, its value is 0. We utilized the python library MLXtend to automatically perform the Apriori principle to determine the frequent itemsets. The library also generated association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on this discretization, we generated association rules and built a recommender system.
+We transformed the dataset into a matrix of 1s and 0s. The columns of the new dataframe represent the video games, whereas the rows represent the players. A table cell is set to 1 if a user has played the game for more than or equal to the median number of hours played; otherwise, its value is 0 as shown in Table [[2](#table2)]. We utilized the python library MLxtend to automatically perform the Apriori principle to determine the frequent itemsets. The library also generated association rules given these itemsets where the pattern evaluation metrics like support, confidence, and lift are listed. Based on this discretization, we generated association rules and built a recommender system.
 
 <a id="table2"></a> 
 #### Table 2. Sample Transformed Dataset.
@@ -152,7 +152,7 @@ We transformed the dataset into a matrix of 1s and 0s. The columns of the new da
 </table>
 
 ### Quantitative Association Rules
-Here comes the fun part - finding association rules. The first step is to determine frequent itemsets. Since the data is relatively large, we have decided to set the minimum support to 0.005. 
+Here comes the fun part - finding association rules. The first step is to determine frequent itemsets. Since the data is relatively large, we have decided to set the minimum support to 0.005.  
 
 <a id="table3"></a> 
 #### Table 3. Itemsets with minimum support of 0.005. 
@@ -312,7 +312,7 @@ Based on the 454 itemsets that passed the minimum support (0.005), we determined
 </tbody>
 </table>
 
-The most frequent 1-itemset is Dota 2. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence [[5](#ref5)], which is equal to the equation 1 below.
+The most frequent 1-itemset is Dota 2 as shown in Table [[4](#table4)]. It dominates the Steam gaming world. The results for frequent 2-itemsets and 3-itemsets in Table [[5](#table5)] and n Table [[6](#table6)] respectively are not necessarily interesting since it is quite expected that popular games such as Dota 2 and Team Fortress 2 would co-occur more than others. Hence, we did some research on relative co-occurrence analysis and found a metric called all-confidence [[5](#ref5)], which is equal to the equation 1 below.
 
                    all-confidence(X⇒Y) =  support(X⇒Y) / max(support(X), support(Y))       (1)
 
@@ -320,8 +320,12 @@ If the all-confidence is equal to 1, then itemsets X and Y always co-occur relat
 
 Since MLxtend does not compute the all-confidence metric, we implemented a function and found the following frequent 2-itemsets.
 
+
+
+## RESULTS
+
 <a id="table7"></a> 
-#### Table 7. Top 5 Frequent 2-itemsets (Based on All-Condidence).
+#### Table 7. Top 5 Frequent 2-itemsets (Based on All-Confidence).
 <table>
 <thead>
 <tr>
@@ -355,15 +359,11 @@ Since MLxtend does not compute the all-confidence metric, we implemented a funct
 
 As observed, the popular game Dota 2 is nowhere to be found in the Top 5. This is because the frequency of 2-itemsets has been computed on a relative basis (all-confidence).
 
-Speaking of all-confidence, this metric seems to be reliable enough for co-occurrence analysis since the above results are quite sensible. For instance, Half-Life 2 Episode One and Half-Life 2 Episode Two are shown to co-occur frequently despite not being popular. Looking at their titles, one is probably a sequel of the other. This means that players are highly interested in completing the game series since the co-occurrence is relatively high.
-
-In addition, Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - Multiplayer appear to co-occur frequently as well. This makes sense since these games are actually related to each other content-wise, not to mention how similar their game titles are. The key difference of these two is that the former has a single-player mechanics while the latter is multiplayer-oriented which requires interaction with other players. Hence, it seems that many of those who played the single player campaign also wanted to try the multiplayer mode, and vice-versa.
+Speaking of all-confidence, this metric seems to be reliable enough for co-occurrence analysis since the results above are quite sensible. For instance, Half-Life 2 Episode One and Half-Life 2 Episode Two are shown to co-occur frequently despite not being popular as shown in Table [[7](#table7)]. Looking at their titles, one is probably a sequel of the other. This means that players are highly interested in completing the game series since the co-occurrence is relatively high.In addition, Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - Multiplayer appear to co-occur frequently as well. This makes sense since these games are actually related to each other content-wise, not to mention how similar their game titles are. The key difference of these two is that the former has a single-player mechanics while the latter is multiplayer-oriented which requires interaction with other players. Hence, it seems that many of those who played the single player campaign also wanted to try the multiplayer mode, and vice-versa.
 
 To avoid the limitation of the support-confidence framework (i.e., high support and high confidence could happen by chance), we primarily use the evaluation metric 'lift' to find more meaningful associations. The idea is to provide recommendations based on strongly correlated video games.
 
-
-## RESULTS
-Sorted based on highest lift, the generated rules are consistent with our results earlier. Half-Life 2 Episode One and Half-Life 2 Episode Two are part of the top list. Having a huge lift of 65.07, these two games indeed have strong, positive correlation. Moreover, it is expected that Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - Multiplayer are also strongly correlated with a lift of 41.47.
+Sorted based on highest 'lift', the generated rules are consistent with our results earlier. Half-Life 2 Episode One and Half-Life 2 Episode Two are part of the top list. Having a huge lift of 65.07, these two games indeed have strong, positive correlation. Moreover, it is expected that Call of Duty Modern Warfare 3 and Call of Duty Modern Warfare 3 - Multiplayer are also strongly correlated with a lift of 41.47.
 
 <a id="table8"></a> 
 #### Table 8. Sample of Interesting Rules.
@@ -407,9 +407,9 @@ Sorted based on highest lift, the generated rules are consistent with our result
 </tbody>
 </table>
 
-One rule that we find cool enough is rule 208, which states that The Elder Scrolls V Skyrim and Fallout 4 are highly correlated with a lift of 9.45. Amazingly, we have found out that bundles of these two games are currently being sold not only on Steam but also on the PlayStation Store. It seems that Steam and PlayStation are aware that players frequently played these two games together before, and that's why these games are recently being sold as a bundle for both [PC](https://store.steampowered.com/bundle/6527/Skyrim_Special_Edition__Fallout_4_GOTY/) and [PS4](https://store.playstation.com/en-us/product/UP1003-CUSA02557_00-FO4GOTYSSEBUNDLE) console gaming. 
+One of the interesting rules that we find cool enough is that The Elder Scrolls V Skyrim and Fallout 4 are highly correlated with a lift of 9.45 as shown in Table[[8](#table8)]. Amazingly, we have found out that bundles of these two games are currently being sold not only on Steam but also on the PlayStation Store. It seems that Steam and PlayStation are aware that players frequently played these two games together before, and that's why these games are recently being sold as a bundle for both [PC](https://store.steampowered.com/bundle/6527/Skyrim_Special_Edition__Fallout_4_GOTY/) and [PS4](https://store.playstation.com/en-us/product/UP1003-CUSA02557_00-FO4GOTYSSEBUNDLE) console gaming. 
 
-Another interesting rule is rule 24, indicating that The Elder Scrolls V Skyrim and BioShock Infinite are also highly correlated with a lift of 8.89. We have found out that a bundle of these two games, for PlayStation 3 this time, are actually being sold on [Amazon.com](https://www.amazon.com/Elder-Scrolls-Skyrim-Bioshock-Infinite-PlayStation/dp/B00HV0MNEI). Again, this means that these two games might really have a strong association and that's why they're being sold as part of a bundle.
+From the same table, another interesting rule indicates that The Elder Scrolls V Skyrim and BioShock Infinite are also highly correlated with a lift of 8.89. We have found out that a bundle of these two games, for PlayStation 3 this time, are actually being sold on [Amazon.com](https://www.amazon.com/Elder-Scrolls-Skyrim-Bioshock-Infinite-PlayStation/dp/B00HV0MNEI). Again, this means that these two games might really have a strong association and that's why they're being sold as part of a bundle.
 
 ## DISCUSSION AND FUTURE WORKS
 In this study, after trying multiple thresholds, we learned that the threshold of 0.5% provides acceptable interpretability of results. We use this support threshold to consider a set of frequent video games played. It means a game set is deemed to be frequent if this set is observed in at least 0.5% of the data set of video games. Please note that the a frequent set should have at least one game while the number of games in the set cannot exceed three.
