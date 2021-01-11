@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is an aspiring Data Scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He is a graduate student intern of DXC's Applied Artificial Intelligence (AI) Studio at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
+**John** is an aspiring Data Scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He is a graduate student intern of [DXC Applied Artificial Intelligence (AI) Studio](https://technical.ly/philly/2019/12/06/drexel-university-applied-artificial-intelligence-studio-dxc-technology/) at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
