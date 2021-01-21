@@ -2,6 +2,7 @@
 layout: single
 header:
   teaser: /assets/images/dota2.png
+  caption: "Photo credit: [**www.dota2.com**](https://www.dota2.com/)"
   image: /assets/images/gamestop.png
   caption: "Photo credit: [**www.gamestop.com**](https://www.gamestop.com/)"
 title: "Identifying Co-occurrence Based on Hours Played for Video Games"
