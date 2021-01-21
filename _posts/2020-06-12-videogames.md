@@ -319,13 +319,13 @@ The most frequent 1-itemset is Dota 2 as shown in Table 4. It dominates the Stea
 
 If the all-confidence is equal to 1, then itemsets X and Y always co-occur relatively. This is equivalent to saying that both confidence(X⇒Y) and confidence(Y⇒X) are equal to 1.
 
-Since MLxtend does not compute the all-confidence metric, we implemented a function and found the following frequent 2-itemsets.
+Since MLxtend does not compute the all-confidence metric, we implemented a function and found the frequent 2-itemsets shown in Table 7 in next section.
 
 
 
 ## RESULTS
 
-As observed, the popular game Dota 2 is nowhere to be found in the Top 5. This is because the frequency of 2-itemsets has been computed on a relative basis (all-confidence).
+As observed from Table 7, the popular game Dota 2 is nowhere to be found in the Top 5. This is because the frequency of 2-itemsets has been computed on a relative basis (all-confidence).
 
 <a id="table7"></a> 
 #### Table 7. Top 5 Frequent 2-itemsets (Based on All-Confidence).
