@@ -14,6 +14,7 @@ permalink: /about/
 #### Master of Science in Data Science 
 *[Drexel University](https://www.drexel.edu/)*<br/>
 June 2021
+- Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention)(April, 2021)
 - Ongoing (CGPA 4.00/4.00)
 - Capstone Project: Multimodal Brain Tumor Segmentation using Convolutional Neural Network
 - DXC Technology-Drexel University Scholar
@@ -21,13 +22,13 @@ June 2021
 #### Master of Science in Physics
 *[University of the Philippines Diliman](https://upd.edu.ph/)*<br/>
 October 2009 
-- Published a paper under Theoretical Physics group titled “Eﬀect of a Linear Potential on the Temporal Diﬀraction of Particle in a Box,” 2009
+- Published a paper under Theoretical Physics group entitled “Eﬀect of a Linear Potential on the Temporal Diﬀraction of Particle in a Box” (2009)
 - Offered a promotion with one of the world's largest investment banks during the last academic year 
 
 #### Bachelor of Science in Physics with Specialization in Computer Applications / Bachelor of Secondary Education Major in Mathematics (Double-degree program)
 *[De La Salle University - Manila](https://dlsu.edu.ph/)*<br/>
 August 2006
-- Undergraduate Thesis titled “Wigner Quasi-probability Distribution of the Cosecant-squared Potential Well
+- Undergraduate Thesis entitled “Wigner Quasi-probability Distribution of the Cosecant-squared Potential Well” (August 2006)
 - Department of Science and Technology (DOST) Scholar
 - De La Salle University (DLSU) Academic Scholar
 - Dean's Lister
@@ -58,7 +59,6 @@ August 2006
 ## <font color='#0092ca'>SKILLS</font>
 - Software Engineering
 - Agile Methodologies (Scrum)
-- Data Strategy
 - Data Visualization
 - Data Mining
 - Machine Learning
