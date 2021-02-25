@@ -63,7 +63,6 @@ August 2006
 - Data Visualization
 - Data Mining
 - Machine Learning
-- Deep Learning
 
 
 
