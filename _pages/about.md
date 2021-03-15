@@ -60,7 +60,7 @@ August 2006
 
 ## <font color='#0092ca'>SKILLS</font>
 - Software Engineering
-- Agile Methodologies (Scrum)
+- Research
 - Data Visualization
 - Data Mining
 - Machine Learning
