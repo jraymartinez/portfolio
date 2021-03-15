@@ -15,6 +15,7 @@ permalink: /about/
 *[Drexel University](https://www.drexel.edu/)*<br/>
 June 2021
 - Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
+- Healthcare Informatics Research Laboratory researcher
 - CGPA 4.00/4.00 (Ongoing)
 - Capstone Project: Multimodal Brain Tumor Segmentation using Convolutional Neural Network
 - DXC Technology-Drexel University Scholar
