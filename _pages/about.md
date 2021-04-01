@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Scientist with nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He is a graduate student intern of [DXC Applied Artificial Intelligence Center of Excellence (AI CoE)](https://blogs.dxc.technology/2019/12/19/launching-dxcs-applied-ai-studio/) at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
+**John** is a Data Scientist with 9 years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He is a graduate student intern of [DXC Applied Artificial Intelligence Center of Excellence (AI CoE)](https://blogs.dxc.technology/2019/12/19/launching-dxcs-applied-ai-studio/) at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
