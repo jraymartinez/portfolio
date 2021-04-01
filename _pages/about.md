@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Scientist with more than nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He is a graduate student intern of [DXC Applied Artificial Intelligence Center of Excellence (AI CoE)](https://blogs.dxc.technology/2019/12/19/launching-dxcs-applied-ai-studio/) at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
+**John** is a Data Scientist with nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail). He is a graduate student intern of [DXC Applied Artificial Intelligence Center of Excellence (AI CoE)](https://blogs.dxc.technology/2019/12/19/launching-dxcs-applied-ai-studio/) at Drexel University. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
@@ -16,7 +16,7 @@ permalink: /about/
 June 2021
 - Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
 - Drexel CCI Healthcare Informatics Research Lab Researcher
-- CGPA 4.00/4.00 (Ongoing)
+- CGPA 4.0/4.0 (Ongoing)
 - Capstone Project: Multimodal Brain Tumor Segmentation using Convolutional Neural Network
 - DXC Technology-Drexel University Scholar
 
@@ -59,11 +59,13 @@ August 2006
 
 
 ## <font color='#0092ca'>SKILLS</font>
+- Machine Learning
+- Data Mining
+- Data Visualization
 - Software Engineering
 - Research
-- Data Visualization
-- Data Mining
-- Machine Learning
+
+
 
 
 
