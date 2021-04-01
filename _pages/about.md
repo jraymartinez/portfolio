@@ -48,8 +48,8 @@ August 2006
 - Senior Software Engineer (2014-2015)
 
 #### [Seven Seven Global Services, Inc.](https://77soft.com)
-- Senior Mainframe Developer (2011-2014)
-- Mainframe Developer (2010-2011)
+- Senior Software Engineer (2011-2014)
+- Software Engineer (2010-2011)
 
 #### [Central Mindanao University](https://cmu.edu.ph/)
 - Physics Instructor (2008-2009)
