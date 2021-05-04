@@ -16,7 +16,7 @@ permalink: /about/
 June 2021
 - Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
 - Drexel CCI Healthcare Informatics Research Lab Researcher
-- CGPA 4.0/4.0 (Ongoing)
+- CGPA 4.0/4.0
 - Capstone Project: "Multimodal Brain Tumor Segmentation using Convolutional Neural Network" which was selected for oral research presentation at the [2021 Drexel Emerging Graduate Scholars Conference](https://drexel.edu/graduatecollege/professional-development/emerging-graduate-scholars-conference/2021-orals/)
 - DXC Technology-Drexel University Scholar
 
@@ -39,15 +39,15 @@ August 2006
 ## <font color='#0092ca'>WORK EXPERIENCE</font>
 
 #### [DXC Technology](https://www.dxc.technology/)
-- Data Scientist (2019-Present)
+- Data Scientist (2019-2021)
 
-#### [Safeway Philtech, Inc.](https://www.safewayphiltech.com/)
+#### [Safeway Philtech Inc (through IT Manager's Inc)](https://www.safewayphiltech.com/)
 - Senior IT Consultant (2016-2019)
 
 #### [Software International Corporation (M)](https://sicmsb.com)
 - Senior Software Engineer (2014-2015)
 
-#### [Seven Seven Global Services, Inc.](https://77soft.com)
+#### [J.P. Morgan Chase & Co. (through Seven Seven Softwares Inc)](https://www.jpmorganchase.com/)
 - Senior Software Engineer (2011-2014)
 - Software Engineer (2010-2011)
 
