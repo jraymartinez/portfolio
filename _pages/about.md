@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Scientist with 2 years of working experience in data analytics and predictive modeling, 9 years of software engineering experience in various industries (Investment Banking, Insurance, Retail), and 2 years of University teaching experience. He is a Data Scientist of [Applied Artificial Intelligence Center of Excellence (AI CoE)](https://technical.ly/philly/2019/12/06/drexel-university-applied-artificial-intelligence-studio-dxc-technology/) at DXC Technology. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
+**John** is a Data Scientist working in data analytics and predictive modeling. He has 9 years of software engineering experience in various industries (Investment Banking, Insurance, Retail), and 2 years of University teaching experience. He is a Data Scientist of [Applied Artificial Intelligence Center of Excellence (AI CoE)](https://technical.ly/philly/2019/12/06/drexel-university-applied-artificial-intelligence-studio-dxc-technology/) at DXC Technology. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
