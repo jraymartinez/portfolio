@@ -8,7 +8,7 @@ categories:
   - certificates
 taxonomy: certificates
 mathjax: "true"
-excerpt: "Awarded 2021 Outstanding Graduate Student."
+excerpt: "Awarded 2021 Outstanding Graduate Student during CCI Honors event."
 
 tags: [outstanding graduate student, award, prestigious honor]
 ---
