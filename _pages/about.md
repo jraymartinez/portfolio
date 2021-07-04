@@ -1,7 +1,7 @@
 ---
 title: "About"
 header:
-  image: /assets/images/John_banner.jpg
+  image: /assets/images/John_banner7.jpg
 author_profile: false
 layout: single
 permalink: /about/
