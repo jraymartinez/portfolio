@@ -9,7 +9,7 @@ permalink: /sitemap/
 
 [About](https://jraymartinez.github.io/portfolio/about/)
 
-[Résumé](https://jraymartinez.github.io/portfolio/assets/docs/jmartinez_resume_20210708.pdf)
+[Résumé](https://jraymartinez.github.io/portfolio/assets/docs/jmartinez_resume_20210702.pdf)
 
 [Portfolio](https://jraymartinez.github.io/portfolio/categories/projects/)
 
