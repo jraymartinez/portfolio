@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Scientist working in data analytics and predictive modeling. He has 11 years of software engineering experience in various industries (Investment Banking, Insurance, Retail), and 2 years of University teaching experience. He is a Data Scientist of [Applied Artificial Intelligence Center of Excellence (AI CoE)](https://technical.ly/philly/2019/12/06/drexel-university-applied-artificial-intelligence-studio-dxc-technology/) at DXC Technology. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
+**John** is a Data Scientist working in data analytics and predictive modeling. He has 11 years of software engineering experience in various industries (Investment Banking, Insurance, Retail), and 2 years of University teaching experience. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
@@ -15,7 +15,7 @@ permalink: /about/
 *[Drexel University](https://www.drexel.edu/)*<br/>
 June 2021
 - CGPA 4.0/4.0
-- Recipient of 2021 Outstanding Graduate Student Award, Drexel University College of Computing & Informatics
+- Recipient of [2021 Outstanding Graduate Student Award, Drexel University College of Computing & Informatics](https://drexel.edu/cci/student-experience/awards-scholarships/awards/)
 - Capstone Project: "Multimodal Brain Tumor Segmentation using Convolutional Neural Network" which was selected for oral research presentation at the [2021 Drexel Emerging Graduate Scholars Conference](https://drexel.edu/graduatecollege/professional-development/emerging-graduate-scholars-conference/2021-orals/)
 - Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
 - Drexel CCI Healthcare Informatics Research Lab Researcher

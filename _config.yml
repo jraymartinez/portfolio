@@ -38,7 +38,7 @@ minimal_mistakes_skin    : "dark" #"air" #  # "default", "aqua", "contrast", "da
 locale                   : "en-US"
 title                    : "John Ray Martinez"
 title_separator          : "-"
-subtitle                 : "Data Scientist"
+subtitle                 : "Data Engineer | Data Scientist"
 name                     : "John Ray Martinez"
 description              : "Portfolio of John Ray Martinez, a data scientist. John has nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
 url                      : "https://jraymartinez.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "Data Scientist with 11 years of software engineering experience in Investment Banking, Insurance, and Retail industries. He is a Data Scientist of Applied Artificial Intelligence Center of Excellence (AI CoE) at DXC Technology. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
+  bio              : "Data Scientist with 11 years of software engineering experience in Investment Banking, Insurance, and Retail industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
   location         : "United States of America"
   links:
     - label: "Email"
