@@ -38,9 +38,10 @@ minimal_mistakes_skin    : "dark" #"air" #  # "default", "aqua", "contrast", "da
 locale                   : "en-US"
 title                    : "John Ray Martinez"
 title_separator          : "-"
-subtitle                 : "Data Engineer | Data Scientist"
+subtitle                 : "Data Professional"
 name                     : "John Ray Martinez"
-description              : "Portfolio of John Ray Martinez, a data scientist. John has nine years of software engineering experience in various industries (Investment Banking, Insurance, Retail)."
+description              : "Portfolio of John Ray Martinez, a data scientist. John is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
+."
 url                      : "https://jraymartinez.github.io"
 #url                      : "http://www.jraymartinez.com"
 baseurl                  : "/portfolio"
@@ -115,7 +116,8 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "Data Scientist with 11 years of software engineering experience in Investment Banking, Insurance, and Retail industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
+  bio              : "John is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
+."
   location         : "United States of America"
   links:
     - label: "Email"
