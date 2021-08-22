@@ -40,8 +40,7 @@ title                    : "John Ray Martinez"
 title_separator          : "-"
 subtitle                 : "Data Professional"
 name                     : "John Ray Martinez"
-description              : "Portfolio of John Ray Martinez, a data scientist. John is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
-."
+description              : "Portfolio of John Ray Martinez, a data scientist. John is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
 url                      : "https://jraymartinez.github.io"
 #url                      : "http://www.jraymartinez.com"
 baseurl                  : "/portfolio"
@@ -116,8 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "John is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
-."
+  bio              : "John is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good."
   location         : "United States of America"
   links:
     - label: "Email"
