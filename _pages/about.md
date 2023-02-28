@@ -16,7 +16,7 @@ permalink: /about/
 June 2021
 - CGPA 4.0/4.0
 - Recipient of [2021 Outstanding Graduate Student Award, Drexel University College of Computing & Informatics](https://drexel.edu/cci/student-experience/awards-scholarships/awards/)
-- Published an international paper entitled ["The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics"](https://www.sciencedirect.com/science/article/abs/pii/S0001457521000415) according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
+- Published an international paper entitled ["The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes"](https://www.sciencedirect.com/science/article/abs/pii/S0001457521000415) in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
 - Capstone Project: "Multimodal Brain Tumor Segmentation using Convolutional Neural Network" which was selected for oral research presentation at the [2021 Drexel Emerging Graduate Scholars Conference](https://drexel.edu/graduatecollege/professional-development/emerging-graduate-scholars-conference/Archive/2021/2021-orals/)
 - Drexel CCI Healthcare Informatics Research Lab Researcher
 
