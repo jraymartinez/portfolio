@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. His research interests include Healthcare Informatics, Traffic Safety, and Data Science for Social Good. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
+**John** is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. He is driven by building a bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
 
 ## <font color='#0092ca'>EDUCATION</font>
 
@@ -16,8 +16,8 @@ permalink: /about/
 June 2021
 - CGPA 4.0/4.0
 - Recipient of [2021 Outstanding Graduate Student Award, Drexel University College of Computing & Informatics](https://drexel.edu/cci/student-experience/awards-scholarships/awards/)
-- Published an international paper entitled ["The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes"](https://www.sciencedirect.com/science/article/abs/pii/S0001457521000415) in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
-- Capstone Project: "Multimodal Brain Tumor Segmentation using Convolutional Neural Network" which was selected for oral research presentation at the [2021 Drexel Emerging Graduate Scholars Conference](https://drexel.edu/graduatecollege/professional-development/emerging-graduate-scholars-conference/Archive/2021/2021-orals/)
+- Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
+- Capstone Project: "Multimodal Brain Tumor Segmentation using Convolutional Neural Network" which was selected for oral research presentation at the [2021 Drexel Emerging Graduate Scholars Conference](https://drexel.edu/graduatecollege/professional-development/emerging-graduate-scholars-conference/2021-orals/)
 - Drexel CCI Healthcare Informatics Research Lab Researcher
 
 #### Master of Science in Physics
