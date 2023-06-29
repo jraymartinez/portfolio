@@ -6,7 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. He is driven by building a bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
+**John** is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. He is driven by building a bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He is an AWS Machine Learning Specialty certified. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
 
 ## <font color='#0092ca'>EDUCATION</font>
 

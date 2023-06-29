@@ -40,7 +40,7 @@ title                    : "John Ray Martinez"
 title_separator          : "-"
 subtitle                 : "Data Professional"
 name                     : "John Ray Martinez"
-description              : "Portfolio of John Ray Martinez, a data scientist. John is a Data Professional with more than a decade of software engineering experience in various industries. He is driven by by building the bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He is the recipient of the Outstanding Graduate Student Award, Drexel University CCI 2021."
+description              : "Portfolio of John Ray Martinez, a data scientist. John is a Data Professional with more than a decade of software engineering experience in various industries. He is driven by by building the bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He is an AWS Machine Learning Specialty certified. He is the recipient of the Outstanding Graduate Student Award, Drexel University CCI 2021."
 url                      : "https://jraymartinez.github.io"
 #url                      : "http://www.jraymartinez.com"
 baseurl                  : "/portfolio"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "John is a Data Professional with more than a decade of software engineering experience in various industries. He is driven by building the bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series."
+  bio              : "John is a Data Professional with more than a decade of software engineering experience in various industries. He is driven by building the bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He is an AWS Machine Learning Specialty certified"
   location         : "United States of America"
   links:
     - label: "Email"
