@@ -6,8 +6,7 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries. He is driven by building a bridge between the Business and Data Science. He is experienced with Machine Learning for tasks related to NLP, recommender systems, and time series. He is an AWS Machine Learning Specialty certified. He has an MS in Data Science, and is the recipient of the Outstanding Graduate Student award for the whole of College of Computing & Informatics, Drexel University in 2021.
-
+**John** is an AWS Machine Learning Specialty certified with experience in NLP, recommender systems, and time series. He is driven by building a bridge between the Business and Data Science. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Retail and Distribution industries.
 ## <font color='#0092ca'>EDUCATION</font>
 
 
@@ -19,13 +18,6 @@ June 2021
 - Published an international paper entitled "The Impact of driver distraction and secondary tasks with and without other co-occurring driving behaviors on the level of road traffic crashes" in the best journal of "Human Factors and Ergonomics" according to Scimago Journal Ranking (Accident Analysis and Prevention) (April 2021)
 - Capstone Project: "Multimodal Brain Tumor Segmentation using Convolutional Neural Network" which was selected for oral research presentation at the [2021 Drexel Emerging Graduate Scholars Conference](https://drexel.edu/graduatecollege/professional-development/emerging-graduate-scholars-conference/2021-orals/)
 - Drexel CCI Healthcare Informatics Research Lab Researcher
-
-#### Master of Science in Physics
-*[University of the Philippines Diliman](https://upd.edu.ph/)*<br/>
-October 2009 
-- Published a paper under Theoretical Physics group entitled “Eﬀect of a Linear Potential on the Temporal Diﬀraction of Particle in a Box” (2009)
-- Taught fundamental of thermodynamics, relativity, quantum mechanics, and elementary particles to Science and Engineering Major students
-- Theoretical Physics Group researcher 
 
 #### Bachelor of Science in Physics with Specialization in Computer Applications / Bachelor of Secondary Education Major in Mathematics (Double-degree program)
 *[De La Salle University - Manila](https://dlsu.edu.ph/)*<br/>
