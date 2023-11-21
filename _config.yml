@@ -38,7 +38,7 @@ minimal_mistakes_skin    : "dark" #"air" #  # "default", "aqua", "contrast", "da
 locale                   : "en-US"
 title                    : "John Ray Martinez"
 title_separator          : "-"
-subtitle                 : "Data Professional"
+subtitle                 : "AI/ML Engineer"
 name                     : "John Ray Martinez"
 description              : "Portfolio of John Ray Martinez, a data scientist. John is an AWS Machine Learning Specialty certified with experience in NLP, recommender systems, and time series. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with more than a decade of software engineering experience with a teaching background in Physics."
 url                      : "https://jraymartinez.github.io"
