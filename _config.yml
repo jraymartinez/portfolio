@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "John is an AWS Machine Learning Specialty certified with experience in NLP, recommender systems, and time series. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with more than a decade of software engineering experience with a teaching background in Physics."
+  bio              : "John is an AWS Certified Machine Learning Specialist with experience in recommendation systems, NLP, and time series. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with 10 years of software engineering experience and a teaching background in Physics."
   location         : "United States of America"
   links:
     - label: "Email"
