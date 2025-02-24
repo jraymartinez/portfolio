@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-  teaser: /assets/images/ucb.png 
+  teaser: /assets/images/ucb_llm.png 
 title: "LLM Agents Mastery"
 date:   2025-02-06 16:50:00 +0800
 categories: 
