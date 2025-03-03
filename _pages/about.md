@@ -29,7 +29,7 @@ August 2006
 ## <font color='#0092ca'>WORK EXPERIENCE</font>
 
 #### [Nicholas and Company](https://www.nicholasandco.com/)
-- Data Engineer (2021-Present)
+- Data Scientist (2021-Present)
 
 #### [DXC Technology](https://www.dxc.technology/)
 - Data Scientist (2019-2021)
