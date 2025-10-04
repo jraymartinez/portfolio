@@ -6,9 +6,15 @@ author_profile: false
 layout: single
 permalink: /about/
 ---
-**John** is an AWS Certified Machine Learning Specialist with experience in recommendation systems, NLP, and time series. He is driven by building a bridge between the Business and Data Science. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with more than a decade of software engineering experience in Investment Banking, Insurance, Food Retail and Distribution industries and a teaching background in Physics.
+**John** is an AWS Certified Machine Learning Specialist with experience in recommendation systems, NLP, and time series. He is driven by building a bridge between the Business and Data Science. He is a PhD Candidate researching multi-agent AI systems with focus on uncertainty quantification, confidence-weighted prediction fusion, and LLM reliability for high-stakes applications. He is a recipient of Outstanding Graduate Student Award, Drexel University 2021. He is a Data Professional with 10+ years of software engineering experience in Investment Banking, Insurance, Food Retail and Distribution industries and a teaching background in Physics.
 ## <font color='#0092ca'>EDUCATION</font>
 
+#### Doctor of Philosophy in Data Science (PhD Candidate) 
+*[Harrisburg University of Science and Technology](https://www.harrisburgu.edu/)*<br/>
+May 2027
+- CGPA 4.0/4.0
+- All But Dissertation (ABD) - Passed comprehensive examinations
+- Dissertation: "Verification-Enhanced Multi-agent LLM for Medical Diagnosis"
 
 #### Master of Science in Data Science 
 *[Drexel University](https://www.drexel.edu/)*<br/>

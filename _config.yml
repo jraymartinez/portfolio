@@ -40,7 +40,7 @@ title                    : "John Ray Martinez"
 title_separator          : "-"
 subtitle                 : "AI/ML Engineer"
 name                     : "John Ray Martinez"
-description              : "Portfolio of John Ray Martinez, a data scientist. John is an AWS Machine Learning Specialty certified with experience in NLP, recommender systems, and time series. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with more than a decade of software engineering experience and a teaching background in Physics."
+description              : "Portfolio of John Ray Martinez, a data scientist. John is an AWS Machine Learning Specialty certified with experience in NLP, recommender systems, and time series. He is a PhD Candidate researching multi-agent AI systems with focus on uncertainty quantification, confidence-weighted prediction fusion, and LLM reliability for high-stakes applications. He is a recipient of Outstanding Graduate Student Award, Drexel University 2021. He is a Data Professional with 10+ years of software engineering experience and a teaching background in Physics."
 url                      : "https://jraymartinez.github.io"
 #url                      : "http://www.jraymartinez.com"
 baseurl                  : "/portfolio"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "John Ray Martinez"
   avatar           : "/assets/images/John.jpg"
-  bio              : "John is an AWS Certified Machine Learning Specialist with experience in recommendation systems, NLP, and time series. He is a recipient of Outstanding Graduate Student Award, College of Computing & Informatics Drexel University in 2021. He is a Data Professional with more than a decade of software engineering experience and a teaching background in Physics."
+  bio              : "John is an AWS Machine Learning Specialty certified with experience in NLP, recommender systems, and time series. He is a PhD Candidate researching multi-agent AI systems with focus on uncertainty quantification, confidence-weighted prediction fusion, and LLM reliability for high-stakes applications. He is a recipient of Outstanding Graduate Student Award, Drexel University 2021. He is a Data Professional with 10+ years of software engineering experience and a teaching background in Physics."
   location         : "United States of America"
   links:
     - label: "Email"
